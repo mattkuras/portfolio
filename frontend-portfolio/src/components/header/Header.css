@@ -1,0 +1,14 @@
+.links-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;       
+}
+
+li {
+    margin: 0 4px;
+}
+
+nav {
+    border: black solid 2px;
+    
+}

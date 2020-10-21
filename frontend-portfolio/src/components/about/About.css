@@ -1,0 +1,10 @@
+.skills-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;       
+}
+
+ul a {
+    margin: 0 5px;
+}
+

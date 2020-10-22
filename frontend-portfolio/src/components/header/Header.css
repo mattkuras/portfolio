@@ -4,11 +4,24 @@
     justify-content: center;       
 }
 
+
+
 li {
     margin: 0 4px;
+    color: white;
+    display: inline-block;
+    text-align: center;
 }
 
 nav {
-    border: black solid 2px;
+    position: fixed;
+    display: flex;
+    text-align:center
     
+}
+
+header {
+    display: flex;
+    height: 50px;
+    justify-content: center;
 }

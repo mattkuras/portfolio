@@ -28,7 +28,15 @@
     color: white;
     font-size: 6rem;
     font-family: 'Megrim', cursive;
+    animation-duration: 3s;
+    animation-name: slidein;
     /* font-family: 'Codystar', cursive; */
+}
+
+.home-content span {
+    font-family: 'Megrim', cursive;
+    font-size: 7rem;
+    color: white;
 }
 
 .home-content h3 {
@@ -44,7 +52,7 @@
 
 .social-list a {
     color: white;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin: 0 25px;
 }
 

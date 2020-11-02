@@ -10,9 +10,9 @@ import VisibilitySensor from "react-visibility-sensor"
 const About = () => {
     return (
         <div className='about-container'>
-            <VisibilitySensor>
+            <VisibilitySensor partialVisibility={true}>
                 {({ isVisible }) => (
-                <Spring delay={300} to={{ opacity: isVisible ? 1 : 0,
+                <Spring delay={100} to={{ opacity: isVisible ? 1 : 0,
                     transform: isVisible? "translateY(0)" : "translateY(-100px)",
                 }}>
                     {(props) => (
@@ -45,35 +45,35 @@ const About = () => {
                 }}>
                     {( props ) => (
                     <div className='skills-container' style={{...props}}>
-                    <div className='skill'>
+                    <div className='skill left'>
                         <a href='https://reactjs.org/'><DiRuby/></a>
                         <h2>Ruby</h2>
                     </div>
-                    <div className='skill'>
+                    <div className='skill left'>
                         <a href='https://reactjs.org/'><SiRails/></a>
                         <h2>Rails</h2>
                     </div>
-                    <div className='skill'>
+                    <div className='skill left'>
                         <a href='https://reactjs.org/'><DiJavascript1/></a>
                         <h2>Javascript</h2>
                     </div>
-                    <div className='skill'>
+                    <div className='skill left'>
                         <a href='https://reactjs.org/'><DiReact/></a>
                         <h2>React</h2>
                     </div>
-                    <div className='skill'>
+                    <div className='skill right'>
                         <a href='https://reactjs.org/'><SiRedux/></a>
                         <h2>Redux</h2>
                     </div>
-                    <div className='skill'>
+                    <div className='skill right'>
                         <a href='https://reactjs.org/'><SiRedhat/></a>
                         <h2>Sinatra</h2>
                     </div>
-                    <div className='skill'>
+                    <div className='skill right'>
                         <a href='https://reactjs.org/'><AiOutlineHtml5/></a>
                         <h2>HTML5</h2>
                     </div>
-                    <div className='skill'>
+                    <div className='skill right '>
                         <a href='https://reactjs.org/'><DiCss3Full/></a>
                         <h2>CSS3</h2>
                     </div>

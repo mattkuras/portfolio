@@ -5,8 +5,16 @@
     justify-content: center;         
     height: 600px;
     position: relative;
-    top: 500px;
+    /* top: 500px; */
     /* border-bottom: solid white 1px; */
+}
+.portfolio-container:after {
+    content: "";
+    display: block; 
+    margin: 0 auto; 
+    width: 75%; 
+    padding-top: 20px;
+    border-bottom: 1px solid white; 
 }
 
 .portfolio-cards {

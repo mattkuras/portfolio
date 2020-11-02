@@ -19,8 +19,8 @@ const PortfolioCard = (props) => {
     console.log(props.color)
 
     // const riseIn = useSpring({ config: config.molasses, transform: cardToggle? 'translateY(-100)' : 'translateY(0)'})
-    const changeButton =  useSpring({ background: colorToggle ? 'cornflowerblue' : 'white' })
-    const changeIcon =  useSpring({ color: colorToggle ? 'crimson': 'white' })
+    const changeButton =  useSpring({ background: colorToggle ? 'lightblue' : 'white' })
+    const changeIcon =  useSpring({ color: colorToggle ? 'indianred': 'white' })
 
 
     let coverClass = cardToggle ? 'hide' : null 

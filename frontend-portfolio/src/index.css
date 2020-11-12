@@ -11,6 +11,12 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 1000px){
+  body {
+    background-attachment: fixed;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

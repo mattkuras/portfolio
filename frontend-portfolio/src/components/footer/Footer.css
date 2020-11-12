@@ -1,5 +1,8 @@
 .footer-container {
     margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-container h2 {
@@ -10,4 +13,22 @@
 footer p {
     font-size: 1.6rem;
     color: white;
+}
+
+.footer-social-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-inline-start: 0px;
+
+}
+
+.footer-social-list a {
+    color: white;
+    font-size: 3.5rem;
+    margin: auto 25px
+}
+
+.footer-social-list a:hover {
+    color: aqua;
 }

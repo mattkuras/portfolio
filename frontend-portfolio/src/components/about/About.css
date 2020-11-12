@@ -35,22 +35,36 @@
 .split-container {
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 
 .headshot-container {
     width: 40%;
 }
 
-.headshot-container img {
-    width: 50%;
-    height: 90%;
-    border-radius: 20%;
+@media (max-width: 910px){
+    .headshot-container {
+        display: none;
+    }
+    .about-me {
+        padding: 0 5%;
+    }
+}
+@media (min-width: 911px){
+    .about-me {
+        width: 60%;
+        padding-right: 100px;
+    }
 }
 
-.about-me {
+.headshot-container img {
     width: 60%;
+    height: 90%;
+    border-radius: 20%;
+
 }
+
+
 
 
 .about-me p {
@@ -68,7 +82,8 @@
 
 .skills-container {
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .skill {
     display: flex;
@@ -76,11 +91,19 @@
     margin: auto 10px;
 }
 
+@media (min-width: 1061px) {
+    
+} 
 .skill a {
-    color: white;
     font-size: 3rem;
     color: #ff7c6e
 }
+/* @media (min-width: 1061px) {
+    .skill a {
+        font-size: 1rem;
+        color: #ff7c6e
+    }
+}  */
 
 .skills-container h2 {
     color: white;

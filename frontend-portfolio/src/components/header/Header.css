@@ -5,23 +5,28 @@
 }
 
 
-
-li {
+.links-list a {
     margin: 0 4px;
     color: white;
     display: inline-block;
     text-align: center;
+    text-decoration: none;
+}
+
+.links-list a:visited{
+    text-decoration: none;
+
 }
 
 nav {
     position: fixed;
-    display: flex;
-    text-align:center
-    
+    text-align:center;
+    height: 50px;
+    justify-content: center;
+    background: black;
+    width: 100%;
 }
 
 header {
-    display: flex;
-    height: 50px;
-    justify-content: center;
+    height: 100px;
 }

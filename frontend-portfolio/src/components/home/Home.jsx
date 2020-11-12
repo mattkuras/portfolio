@@ -6,7 +6,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { useSpring, animated, config, useTransition } from "react-spring";
 import { Spring, Trail, Transition } from "react-spring/renderprops";
 
-const Home = () => {
+const Home = (props) => {
   const propsMiddle = useSpring({
     config: config.molasses,
     from: { transform: `translate(0, 100%)` },
@@ -68,37 +68,39 @@ const Home = () => {
   // ))
 
   return (
-    <div className="home-container">
-      <div className="home-content">
-        <Spring
-          config={config.molasses}
-          from={{ opacity: 0 }}
-          to={{ opacity: 1 }}
-        >
-          {(props) => <span style={props}>Matt Kuras</span>}
-        </Spring>
-        {/* <animated.span style={propsName}>M</animated.span><span>a</span><span>t</span><span>t</span> */}
-        {/* <span>K</span><span>u</span><span>r</span><span>a</span><span>s</span> */}
-        <animated.h3 style={propsTitle}>Full Stack Web Developer</animated.h3>
-        <ul className="social-list">
-          <animated.li style={propsName}>
-            <a href="https://github.com/mattkuras">
-              <FaGithub />
-            </a>
-          </animated.li>
-          <animated.li style={propsMiddle}>
-            <a href="https://www.linkedin.com/in/matthew-kuras-72a7711b5/">
-              <AiFillLinkedin />
-            </a>
-          </animated.li>
-          <animated.li style={propsRight}>
-            <a href="https://docs.google.com/document/d/1C0SZOLD4BQdhu0hVqywGrrSIKsbuFzAdNm9l2L7fGRE/edit?usp=sharing">
-              <CgFileDocument />
-            </a>
-          </animated.li>
-        </ul>
+    <a name='home-con'>
+      <div className="home-container" ref={props.reference}>
+        <div className="home-content">
+          <Spring
+            config={config.molasses}
+            from={{ opacity: 0 }}
+            to={{ opacity: 1 }}
+          >
+            {(props) => <span style={props}>Matt Kuras</span>}
+          </Spring>
+          {/* <animated.span style={propsName}>M</animated.span><span>a</span><span>t</span><span>t</span> */}
+          {/* <span>K</span><span>u</span><span>r</span><span>a</span><span>s</span> */}
+          <animated.h3 style={propsTitle}>Full Stack Web Developer</animated.h3>
+          <ul className="social-list">
+            <animated.li style={propsName}>
+              <a href="https://github.com/mattkuras">
+                <FaGithub />
+              </a>
+            </animated.li>
+            <animated.li style={propsMiddle}>
+              <a href="https://www.linkedin.com/in/matthew-kuras-72a7711b5/">
+                <AiFillLinkedin />
+              </a>
+            </animated.li>
+            <animated.li style={propsRight}>
+              <a href="https://docs.google.com/document/d/1C0SZOLD4BQdhu0hVqywGrrSIKsbuFzAdNm9l2L7fGRE/edit?usp=sharing">
+                <CgFileDocument />
+              </a>
+            </animated.li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 

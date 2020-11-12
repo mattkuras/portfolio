@@ -10,6 +10,7 @@ const PortfolioCard = (props) => {
     const [cardToggle, setCardToggle] = useState(false)
     const [colorToggle, setColorToggle] = useState(false)
 
+
     const toggleCard = () => {
         setCardToggle(!cardToggle)
     }
@@ -19,7 +20,9 @@ const PortfolioCard = (props) => {
 
     // const riseIn = useSpring({ config: config.molasses, transform: cardToggle? 'translateY(-100)' : 'translateY(0)'})
     const changeButton =  useSpring({ background: colorToggle ? 'indianred' : 'white' })
-    const changeIcon =  useSpring({ color: colorToggle ? 'indianred': 'white' })
+    const changeIcon =  useSpring({ color: colorToggle ? 'coral': 'indianred' })
+    const changeTitle =  useSpring({ color: colorToggle ? 'white': 'indianred' })
+
 
 
     let coverClass = cardToggle ? 'hide' : null 
@@ -30,7 +33,7 @@ const PortfolioCard = (props) => {
             <div className='portfolio-card' >
                 <animated.div className= {`card-cover ${coverClass}`} >
                     <animated.span className='project-icon' style={changeIcon}>{props.icon}</animated.span>
-                    <p>{props.name}</p>
+                    <animated.p style={changeTitle}>{props.name}</animated.p>
                     <animated.button onMouseEnter={toggleColor}
                             onMouseLeave={toggleColor}
                             onClick={toggleCard}

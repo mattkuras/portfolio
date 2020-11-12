@@ -43,9 +43,9 @@
 }
 
 .headshot-container img {
-    width: 58%;
-    height: 95%;
-    border-radius: 50%;
+    width: 50%;
+    height: 90%;
+    border-radius: 20%;
 }
 
 .about-me {

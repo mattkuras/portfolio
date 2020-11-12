@@ -3,7 +3,7 @@ import './About.css'
 import { DiReact, DiRuby, DiJavascript1, DiCss3Full } from 'react-icons/di'
 import {SiRails, SiRedux, SiRedhat } from 'react-icons/si'
 import {AiOutlineHtml5} from 'react-icons/ai'
-import Headshot from './headshot.jpg'
+import sophiaheadshot from './sophiaheadshot.JPG'
 import { Spring } from "react-spring/renderprops";
 import VisibilitySensor from "react-visibility-sensor"
 
@@ -23,7 +23,7 @@ const About = () => {
             </VisibilitySensor>
             <div className='split-container'>
                 <div className='headshot-container'>
-                    <img alt='headshot' src={Headshot}/>
+                    <img alt='sophiaheadshot.JPG' src={sophiaheadshot}/>
                 </div>
                 <div className='about-me'>
                     <p>Experienced in Ruby on Rails and JavaScript based programming and a background in customer service and education. Teaching English and developing youth soccer has driven me to deeply understand my passions to the point that I can clearly communicate their intricacies even to a child, which has translated directly to my education in code. Helping change others’ futures through my skills in communication and project planning, I want to help change our future using technology. </p>

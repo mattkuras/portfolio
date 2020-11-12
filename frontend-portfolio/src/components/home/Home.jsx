@@ -92,7 +92,7 @@ const Home = () => {
             </a>
           </animated.li>
           <animated.li style={propsRight}>
-            <a href="https://www.linkedin.com/in/matthew-kuras-72a7711b5/">
+            <a href="https://docs.google.com/document/d/1C0SZOLD4BQdhu0hVqywGrrSIKsbuFzAdNm9l2L7fGRE/edit?usp=sharing">
               <CgFileDocument />
             </a>
           </animated.li>

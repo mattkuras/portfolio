@@ -5,6 +5,8 @@ import Header from "./components/header/Header";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
+import Footer from './components/footer/Footer'
+
 function App() {
   return (
     <div className="App" >
@@ -13,7 +15,8 @@ function App() {
       <About />
       <div className='spacer'></div>
       <Portfolio />  
-      <Contact />
+      {/* <Contact /> */}
+      <Footer/>
     </div>
   );
 }

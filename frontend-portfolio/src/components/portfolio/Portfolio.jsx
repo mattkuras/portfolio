@@ -42,7 +42,7 @@ const Portfolio = (props) => {
               website={"https://guitar-store-app.herokuapp.com/"}
               gitHubLink={"https://github.com/mattkuras/guitar-store"}
               description={
-                "App that allows users to psudo purchase items online by selecting and adding to cart using Redux."
+                "App that allows users to pseudo purchase items online by selecting and adding to cart using Redux."
               }
               skillHighlight={"Redux, React"}
               icon={<SiRedux />}

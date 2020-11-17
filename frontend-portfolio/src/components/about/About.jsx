@@ -30,14 +30,12 @@ const About = (props) => {
           </div>
           <div className="about-me">
             <p>
-              Experienced in Ruby on Rails and JavaScript based programming and
-              a background in customer service and education. Teaching English
-              and developing youth soccer has driven me to deeply understand my
-              passions to the point that I can clearly communicate their
-              intricacies even to a child, which has translated directly to my
-              education in code. Helping change others’ futures through my
-              skills in communication and project planning, I want to help
-              change our future using technology.{" "}
+            Experienced in Ruby on Rails and JavaScript based programming and a background 
+            in education and customer service. Living abroad to learn and teach different 
+            languages gave me substantial experience in understanding syntax, pattern recognition, 
+            and new cultures, all skills that have translated beautifully to writing code, self-teaching, 
+            and doing so alongside others. Helping serve and improve the lives of those around me, 
+            I’ve transitioned to coding in hopes to do so at scale.
             </p>
           </div>
         </div>

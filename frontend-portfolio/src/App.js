@@ -6,6 +6,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
 import Footer from './components/footer/Footer'
+import Alien from "./components/alien";
 
 function App() {
 
@@ -21,16 +22,18 @@ function App() {
 
   return (
     <div className="App" >
-      <Header scroll={scroll}
+      <Alien/>
+      {/* <Header scroll={scroll}
        />
       <Home reference={homeRef} />
       <About reference={aboutRef}/>
       <div className='spacer'></div>
       <Portfolio reference={portfolioRef} />  
       {/* <Contact /> */}
-      <Footer reference={footerRef}/>
+      {/* <Footer reference={footerRef}/>  */}
     </div>
   );
 }
 
 export default App;
+
